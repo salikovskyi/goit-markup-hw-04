@@ -376,20 +376,23 @@ p:last-child {
 
 .client-section {
   display: flex;
-  fill: #afb1b8;
   line-height: 0;
 }
 
-.client-section-item {
+.client-section-link {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   height: 92px;
   width: 100%;
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.client-section-item:hover,
-.client-section-item:focus {
+.client-section-link:hover,
+.client-section-link:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
   cursor: pointer;
@@ -406,9 +409,6 @@ p:last-child {
   flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
   margin-left: 30px;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .client-section-item {
@@ -491,6 +491,8 @@ address {
   justify-content: center;
   height: 44px;
   width: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-link:hover,
@@ -501,8 +503,6 @@ address {
 
 .footer-network-item {
   margin-right: 10px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 /*============CLOSE===FOOTER==============*/
 
